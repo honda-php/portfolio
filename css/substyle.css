@@ -1,0 +1,429 @@
+/* CSS Document */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, 'メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: .8px;
+  word-break: break-all;
+}
+
+a {
+  color: #1ca9e3;
+  text-decoration: none;
+}
+
+a:hover,
+a:hover img {
+  opacity: .8;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+img,
+video,
+object {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  /*vertical-align: bottom;*/
+  display: block;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+/*--------------------------------
+　全体
+---------------------------------*/
+
+#wrapper {
+  background-color: #fff;
+}
+
+.inner {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+#contents {
+  padding: 100px 0 50px 0;
+}
+
+/*--------------------------------
+　ヘッダー
+---------------------------------*/
+
+#header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+
+#header .logo {
+    display: block;
+  }
+  
+#header .main-image{
+  background-image: url(../img/header.jpeg);
+  background-size: cover;
+  width: 100%;
+  padding-top: 20%;
+  position: relative;
+}
+
+/*#header .logo-name {
+  display: block;
+  font-family: 'Amatic SC', cursive;
+  font-size: 32px;
+  line-height: 1;
+  text-align: center;
+  color: #757575;
+  margin-bottom: 5px;
+}*/
+
+#header .logo-title {
+  font-family: 'Shadows Into Light', cursive;
+  display: block;
+  font-size: 30px;
+  font-weight: normal;
+  color: #ddd;
+  letter-spacing: .1em;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+#header .logo-desc {
+  font-family: 'Shadows Into Light', cursive; 
+  display: block;
+  font-size: 30px;
+  font-weight: normal;
+  color: #ddd;
+  letter-spacing: .2em;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+
+
+}
+
+/*--------------------------------
+　グローバルナビ
+---------------------------------*/
+
+#gnav {
+  padding: 10px;
+  font-family: 'Cormorant Garamond', serif;
+
+  z-index: 100;
+}
+
+#gnav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#gnav li {
+  padding: 0 30px;
+}
+
+#gnav li a {
+  font-weight: bold;
+  font-size: 25px;
+  color: #333;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+}
+
+#gnav li a:hover{
+  text-decoration: underline;
+}
+
+#gnav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 6px 3px -3px rgba(0, 0, 0, 0.2);
+  transform: translate3d(0, 0, 0);
+}
+
+/*--------------------------------
+　Section
+---------------------------------*/
+
+.section .inner {
+  padding: 80px 10px;
+}
+
+.section .section-title-block {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section .section-title {
+  font-family: 'Cormorant Garamond', serif;
+  text-transform: lowercase;
+  letter-spacing: .2em;
+  display: inline-block;
+  font-size: 36px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.section .section-desc {
+  text-align: center;
+}
+
+.two-column-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.two-column-image {
+  width: 33%;
+}
+
+.two-column-image img {
+  margin: 0 auto;
+}
+
+.two-column-desc {
+  width: 62%;
+}
+
+
+
+
+
+/*--------------------------------
+ contact
+---------------------------------*/
+
+#contact .section-contact-wraper{
+  width: 80%;
+  margin: auto;
+}
+#contact .btn{
+  margin: auto;
+}
+
+#contact .section-contact {
+  flex-basis: 48%;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#contact address, .btn-contact{
+  margin : 0 auto;
+}
+#contact .btn-contact{
+  font-size: 20px;
+}
+
+#contact address i{
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+#contact .btn-contact{
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 5em;
+  text-decoration: none;
+  color: #000;
+  background: #ECECEC;
+  border-radius:  15px;
+  transition: .4s;
+}
+
+#contact .btn-contact:hover{
+  background: #636363;
+}
+
+
+
+
+/*--------------------------------
+ Footer
+---------------------------------*/
+
+#footer {
+  background-color: #333;
+}
+
+#footer .inner {
+  padding: 30px;
+}
+
+#footer .footer-link ul {
+  font-family: 'Cormorant Garamond', serif;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+#footer .footer-link li {
+  font-size: 12px;
+  padding: 0 20px;
+}
+
+#footer .footer-link li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+#footer .copyright {
+  font-size: 10px;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+/*media Queries 767
+----------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+/*  #header {
+   height: 60vh;
+  }*/
+
+
+  #header .logo-title {
+    font-size: 15px;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+  }
+
+
+  #header .logo-desc {
+    font-size: 15px;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+
+  }
+
+  #gnav li {
+    padding: 0 10px;
+  }
+
+  #gnav li a {
+    font-size: 12px;
+  }
+
+  #gnav li a:hover {
+    opacity: 1;
+  }
+
+  #contents {
+    padding: 40px 0;
+  }
+
+  .section .inner {
+    padding: 30px 15px;
+  }
+
+  .section .section-title-block {
+    margin-bottom: 10px;
+  }
+
+  .section .section-title {
+    font-size: 32px;
+  }
+
+
+
+  #about .two-column-wrapper {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  #about .two-column-image {
+    width: 50%;
+    margin: 0 auto 20px;
+  }
+
+  #about .two-column-desc {
+    width: 100%;
+  }
+
+
+
+  #footer .inner {
+    padding: 20px 0;
+  }
+
+  #footer .footer-link li {
+    font-size: 10px;
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+}
