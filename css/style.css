@@ -241,7 +241,7 @@ li {
 ---------------------------------*/
 
 #works .card {
-  width: 32%;
+  width: 42%;
 }
 
 #works .card {
@@ -265,7 +265,7 @@ li {
 }
 
 #works .card-wrapper {
-  padding: 20px 0;
+  padding: 20px 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

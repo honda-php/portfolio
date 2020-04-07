@@ -3,6 +3,7 @@
 // ini_set('display_errors', 1);
 // ini_set('error_reporting', E_ALL);
 
+
 require_once('function.php');
 require_once('vendor/autoload.php');
 
@@ -53,10 +54,9 @@ if(isset($_SESSION['contact']) && $_REQUEST['action'] == 'rewrite'){
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <meta property='og:type' content='website'>
     <meta property='og:title' content='Kana Honda's Portfolio'>
-  <meta property='og:url' content='URL入る'>
-    <!--URL入れて-->
+  <meta property='og:url' content=''>
   <meta property='og:description' content='本多佳奈のポートフォリオです。'>
-  <meta property="og:image" content="img/header.jpeg">
+  <meta property="og:image" content="">
   <meta name="description" content="本多佳奈のポートフォリオです。" />
   <title>Kana Honda's portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
@@ -65,7 +65,7 @@ if(isset($_SESSION['contact']) && $_REQUEST['action'] == 'rewrite'){
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <link href="css/substyle.css" media="all" rel="stylesheet" type="text/css" />
-  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel="shortcut icon" href="img/honda_favicon.png" />
 </head>
 <body>
   <div id="wrapper">
